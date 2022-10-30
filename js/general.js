@@ -126,15 +126,15 @@ function loadedData(data)
 		}
 
 		var dataClass = (i % 2 == 0 ? 
-						 "leftInfo" : "rightInfo")
+						"leftInfo" : "rightInfo")
 		var dateClass = (i % 2 == 0 ? 
-						 "leftDate" : "rightDate")
+						"leftDate" : "rightDate")
 
 		// generate html code for links section
 		links = "<h3>"
 		e["links"].forEach(function(link){
 			links += "<span><a href=\"https://" + link[1] + "\">" + 
-					 link[0] + "</a></span>";
+		    link[0] + "</a></span>";
 		});
 		if (e["links"].length == 0)
 		{
